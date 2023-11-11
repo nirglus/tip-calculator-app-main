@@ -2,21 +2,28 @@ body {
   font-family: "Space Mono", monospace;
   background-color: hsl(185, 41%, 84%);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
 .calc-container {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: row;
 }
 
-.l-card, .r-card {
+.l-card {
   display: flex;
+  align-items: flex-start;
   justify-content: center;
+  flex-direction: column;
+}
+
+.r-card {
+  display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
