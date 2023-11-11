@@ -6,10 +6,10 @@ $inputBg: hsl(189, 41%, 97%);
 $completedBtn: hsl(172, 67%, 45%);
 $inputFont: 24px;
 
-@mixin flexCenter($direction){
+@mixin flex($direction, $align, $justify){
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: $align;
+    justify-content: $justify;
     flex-direction: $direction;
 }
 
@@ -21,8 +21,9 @@ $inputFont: 24px;
 body{
     font-family: 'Space Mono', monospace;
     background-color: $mainBg;
-    @include flexCenter(column);
+    @include flexCenter(column, center, center);
 }
 .calc-container{
-    @include flexCenter(row);
+    @include flexCenter(row, center, center);
 }
+
