@@ -6,7 +6,20 @@ $inputBg: hsl(189, 41%, 97%);
 $completedBtn: hsl(172, 67%, 45%);
 $inputFont: 24px;
 
+@mixin flexCenter($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin widthHeight($width, $height){
+    width: $width;
+    height: $height;
+}
+
 body{
     font-family: 'Space Mono', monospace;
     background-color: $mainBg;
+    @include flexCenter(column);
 }
