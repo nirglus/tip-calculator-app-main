@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", () =>{
     const pplNumInput = document.getElementById("pplNum");
     const displayTip = document.getElementById("tipDisp");
     const displayTotal = document.getElementById("totalDisp");
+    const errorPpl = document.getElementById("errorPpl");
+    const resetBtn = document.getElementById("resetBtn");
     let lastChangedInput;
     
     function calcTip(bill, tip, people){
@@ -17,27 +19,35 @@ document.addEventListener("DOMContentLoaded", () =>{
         return totalEach;
     }
     
-    function calculate(){
+    function calculate() {
         const billValue = parseFloat(billInput.value) || 0;
         const tipPercentage = lastChangedInput.id === "tip-input" ? parseFloat(customTipInput.value) || 0 : parseFloat(lastChangedInput.innerHTML);
-        
         const pplNumValue = parseFloat(pplNumInput.value) || 1;
+        errorPpl.innerHTML = "";
         const tipAmountPerPerson = calcTip(billValue, tipPercentage, pplNumValue);
         const totalAmountPerPerson = calcTotal(billValue, tipPercentage, pplNumValue);
-        
+    
         displayTip.innerHTML = `${tipAmountPerPerson.toFixed(2)}`;
         displayTotal.innerHTML = `${totalAmountPerPerson.toFixed(2)}`;
     }
     
     function handleInputChange(event){
         lastChangedInput = event.target;
-        calculate();
+        if(pplNumInput.value == 0 && pplNumInput.value !== ""){
+            errorPpl.innerHTML = "Can't be zero";
+        }else {
+            calculate();
+        }
     }
-    
+
     billInput.addEventListener("input", handleInputChange);
     tipBtns.forEach(btn => btn.addEventListener("click", handleInputChange));
     customTipInput.addEventListener("input", handleInputChange);
     pplNumInput.addEventListener("input", handleInputChange);
+    resetBtn.addEventListener("click", () =>{
+        displayTip.innerHTML = "0.00";
+        displayTotal.innerHTML = "0.00";
+    });
 });
 
 
