@@ -18,7 +18,7 @@ function calcTotal(bill, tip, people){
 
 function calculate(){
     const billValue = parseFloat(billInput.value) || 0;
-    const tipPercentage = lastChangedInput.id === 'tip-input' ? parseFloat(customTipInput.value) || 0 : parseFloat(lastChangedInput.innerHTML);
+    const tipPercentage = lastChangedInput.id === "tip-input" ? parseFloat(customTipInput.value) || 0 : parseFloat(lastChangedInput.innerHTML);
     
     const pplNumValue = parseFloat(pplNumInput.value) || 1;
     const tipAmountPerPerson = calcTip(billValue, tipPercentage, pplNumValue);
@@ -32,6 +32,11 @@ function handleInputChange(event){
     lastChangedInput = event.target;
     calculate();
 }
+
+billInput.addEventListener("input", handleInputChange);
+tipBtns.forEach(btn => btn.addEventListener("click", handleInputChange));
+customTipInput.addEventListener("input", handleInputChange);
+pplNumInput.addEventListener("input", handleInputChange);
 
 
 
