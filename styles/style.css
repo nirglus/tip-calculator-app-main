@@ -1,6 +1,7 @@
 body {
   font-family: "Space Mono", monospace;
   background-color: hsl(185, 41%, 84%);
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,8 +11,10 @@ body {
 .calc-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
+  width: 800px;
+  height: 500px;
 }
 
 .l-card {
@@ -19,6 +22,8 @@ body {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  width: 100px;
+  height: 100px;
 }
 
 .r-card {
@@ -26,4 +31,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100px;
+  height: 100px;
 }/*# sourceMappingURL=style.css.map */

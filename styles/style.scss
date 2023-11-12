@@ -21,14 +21,18 @@ $inputFont: 24px;
 body{
     font-family: 'Space Mono', monospace;
     background-color: $mainBg;
+    height: 100vh;
     @include flex(column, center, center);
 }
 .calc-container{
-    @include flex(row, center, center);
+    @include flex(row, center, space-around);
+    @include widthHeight(800px, 500px);
 }
 .l-card{
     @include flex(column, flex-start, center);
+    @include widthHeight(100px, 100px);
 }
 .r-card{
     @include flex(column, center, center);
+    @include widthHeight(100px, 100px);
 }
