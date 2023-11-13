@@ -5,6 +5,7 @@ $labelColor: hsl(184, 14%, 56%);
 $inputBg: hsl(189, 41%, 97%);
 $completedBtn: hsl(172, 67%, 45%);
 $inputFont: 24px;
+$mainFont: 'Space Mono', monospace;
 
 @mixin flex($direction, $align, $justify){
     display: flex;
@@ -19,7 +20,7 @@ $inputFont: 24px;
 }
 
 body{
-    font-family: 'Space Mono', monospace;
+    font-family: $mainFont;
     background-color: $mainBg;
     margin: 0;
     padding: 0;
@@ -45,9 +46,23 @@ body{
 }
 .tip-btns{
     display: grid;
-    grid-template-rows: repeat(3, 30px);
-    grid-template-columns: repeat(2 ,90px);
+    width: 270px;
+    grid-template-rows: repeat(3, 5vh);
+    grid-template-columns: repeat(2, 43vw);
     gap: 10px;
+    justify-content: space-around;
+    button{
+        border: 0;
+        border-radius: 5px;
+        background-color: $outputCard;
+        color: #fff;
+        font-family: $mainFont;
+        font-size: $inputFont;
+        &:hover{
+            background-color: $completedBtn;
+            color: $outputCard;
+        }
+    }
 }
 .bill-sec{
     @include flex(column, flex-start, center);

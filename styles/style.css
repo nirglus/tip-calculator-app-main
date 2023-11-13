@@ -45,9 +45,23 @@ body {
 
 .tip-btns {
   display: grid;
-  grid-template-rows: repeat(3, 30px);
-  grid-template-columns: repeat(2, 90px);
+  width: 270px;
+  grid-template-rows: repeat(3, 5vh);
+  grid-template-columns: repeat(2, 43vw);
   gap: 10px;
+  justify-content: space-around;
+}
+.tip-btns button {
+  border: 0;
+  border-radius: 5px;
+  background-color: hsl(183, 100%, 15%);
+  color: #fff;
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+}
+.tip-btns button:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
 }
 
 .bill-sec {
