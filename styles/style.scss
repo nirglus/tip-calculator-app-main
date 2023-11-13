@@ -29,7 +29,8 @@ body{
 }
 .calc-container{
     @include flex(column, center, space-around);
-    @include widthHeight(unset, 500px);
+    @include widthHeight(unset, 800px);
+    padding: 0 10%;
     background-color: #fff;
 }
 .l-card{
@@ -37,7 +38,7 @@ body{
     @include widthHeight(unset, 100px);
 }
 .r-card{
-    @include flex(column, center, center);
+    @include flex(column, stretch, center);
     @include widthHeight(100%, 100px);
 }
 .tip-btns{
@@ -47,5 +48,7 @@ body{
     gap: 10px;
 }
 .output-sec{
-    @include flex(row, center, center);
+    @include flex(row, flex-end, space-between);
+    width: 200px;
 }
+
