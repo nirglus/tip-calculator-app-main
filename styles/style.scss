@@ -4,6 +4,8 @@ $customLabel: hsl(186, 14%, 43%);
 $labelColor: hsl(184, 14%, 56%);
 $inputBg: hsl(189, 41%, 97%);
 $completedBtn: hsl(172, 67%, 45%);
+$inputColor: rgba(0,73, 77, 0.9);
+$placeHolder: rgba(0, 73, 77, 0.4);
 $inputFont: 24px;
 $mainFont: 'Space Mono', monospace;
 
@@ -19,34 +21,59 @@ $mainFont: 'Space Mono', monospace;
     height: $height;
 }
 
+@mixin inputFormat(){
+    border: 0;
+    border-radius: 5px;
+    background-color: $inputBg;
+    color: $inputColor;
+    font-size: $inputFont;
+    font-family: $mainFont;
+    text-align: right;
+    &::placeholder{
+        color: $placeHolder;
+    }
+    &:focus, &:active{
+        outline: none;
+        border: solid 2px $completedBtn;
+    }
+}
+
 body{
     font-family: $mainFont;
     background-color: $mainBg;
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100vw;
+    @include widthHeight(100vw, 100vh);
     @include flex(column, center, center);
 }
 .calc-container{
-    @include flex(column, center, space-around);
     @include widthHeight(90%, 800px);
+    @include flex(column, center, space-around);
     padding: 0 5%;
     background-color: #fff;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 .l-card{
-    @include flex(column, center, center);
     @include widthHeight(300px, fit-content);
+    @include flex(column, center, center);
 }
 .r-card{
-    @include flex(column, stretch, center);
     @include widthHeight(100%, 100px);
+    @include flex(column, stretch, center);
+}
+input{
+    @include inputFormat();
+}
+.bill-sec{
+    @include flex(column, flex-start, center);
+}
+#billInput, #pplNum{
+    @include widthHeight(86vw, 3vh);
 }
 .tip-btns{
     display: grid;
-    width: 270px;
+    width: 87vw;
     grid-template-rows: repeat(3, 5vh);
     grid-template-columns: repeat(2, 43vw);
     gap: 10px;
@@ -62,12 +89,6 @@ body{
             background-color: $completedBtn;
             color: $outputCard;
         }
-    }
-}
-.bill-sec{
-    @include flex(column, flex-start, center);
-    input{
-        width: 270px;
     }
 }
 label, .tip-select p{
