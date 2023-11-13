@@ -21,24 +21,31 @@ $inputFont: 24px;
 body{
     font-family: 'Space Mono', monospace;
     background-color: $mainBg;
+    margin: 0;
+    padding: 0;
     height: 100vh;
+    width: 100vw;
     @include flex(column, center, center);
 }
 .calc-container{
     @include flex(column, center, space-around);
     @include widthHeight(unset, 500px);
+    background-color: #fff;
 }
 .l-card{
-    @include flex(column, flex-start, center);
+    @include flex(column, center, center);
     @include widthHeight(unset, 100px);
 }
 .r-card{
     @include flex(column, center, center);
-    @include widthHeight(unset, 100px);
+    @include widthHeight(100%, 100px);
 }
 .tip-btns{
     display: grid;
     grid-template-rows: repeat(3, 30px);
     grid-template-columns: repeat(2 ,90px);
     gap: 10px;
+}
+.output-sec{
+    @include flex(row, center, center);
 }
