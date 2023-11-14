@@ -158,5 +158,23 @@ label, .tip-select p{
         @include widthHeight(54vw, 52vh);
         border-radius: 20px;
         flex-direction: row;
+        justify-content: space-between;
+    }
+    #billInput, #pplNum{
+        width: unset;
+    }
+    .tip-btns{
+        width: unset;
+        grid-template-rows: repeat(2, 6vh);
+        grid-template-columns: repeat(3, 9vw);
+    }
+    .r-card{
+        width: unset;
+    }
+    .output-sec{
+        width: unset;
+    }
+    #resetBtn{
+        width: unset;
     }
 }
