@@ -165,4 +165,16 @@ label, .tip-select p {
 #resetBtn:hover {
   cursor: pointer;
   background-color: rgb(159, 232, 223);
+}
+
+@media (min-width: 768px) {
+  body {
+    justify-content: center;
+  }
+  .calc-container {
+    width: 54vw;
+    height: 52vh;
+    border-radius: 20px;
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=style.css.map */
