@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", () =>{
     customTipInput.addEventListener("input", handleInputChange);
     pplNumInput.addEventListener("input", handleInputChange);
     resetBtn.addEventListener("click", () =>{
-        displayTip.innerHTML = "0.00";
-        displayTotal.innerHTML = "0.00";
+        displayTip.innerHTML = "$0.00";
+        displayTotal.innerHTML = "$0.00";
         billInput.value = "";
         pplNumInput.value = "";
         customTipInput.value = "";

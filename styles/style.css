@@ -200,4 +200,9 @@ label, .tip-select p {
   .ppl-num-headings {
     justify-content: space-between;
   }
+  .splitter {
+    letter-spacing: 10px;
+    font-size: 22px;
+    margin-bottom: 8vh;
+  }
 }/*# sourceMappingURL=style.css.map */
