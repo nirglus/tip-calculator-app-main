@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () =>{
             pplNumInput.style.border = "solid 2px #f00";
         }else {
             pplNumInput.style.border = "";
+            resetBtn.removeAttribute("disabled");
             calculate();
         }
     }
@@ -54,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () =>{
         customTipInput.value = "";
         errorPpl.innerHTML = "";
         pplNumInput.style.border = "";
+        resetBtn.setAttribute("disabled", true);
     });
 });
 
