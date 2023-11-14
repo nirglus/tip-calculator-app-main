@@ -131,10 +131,6 @@ label, .tip-select p {
   color: #f00;
 }
 
-.hidden {
-  display: none;
-}
-
 .output-sec {
   display: flex;
   align-items: flex-end;
@@ -197,5 +193,8 @@ label, .tip-select p {
   }
   #resetBtn {
     width: 22vw;
+  }
+  .output-display {
+    font-size: 30px;
   }
 }/*# sourceMappingURL=style.css.map */

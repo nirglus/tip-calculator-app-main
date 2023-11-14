@@ -122,9 +122,6 @@ label, .tip-select p{
     font-size: 14px;
     color: #f00;
 }
-.hidden{
-    display: none;
-}
 .output-sec{
     @include flex(row, flex-end, space-between);
     width: 75vw;
@@ -179,5 +176,8 @@ label, .tip-select p{
     }
     #resetBtn{
         width: 22vw;
+    }
+    .output-display{
+        font-size: 30px;
     }
 }
