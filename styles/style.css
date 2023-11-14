@@ -1,14 +1,21 @@
 body {
-  font-family: "Space Mono", monospace;
-  background-color: hsl(185, 41%, 84%);
-  margin: 0;
-  padding: 0;
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+  gap: 1vh;
+  font-family: "Space Mono", monospace;
+  background-color: hsl(185, 41%, 84%);
+}
+
+.splitter {
+  color: rgba(0, 73, 77, 0.8);
+  letter-spacing: 2vw;
+  font-size: 26px;
 }
 
 .calc-container {
@@ -25,13 +32,12 @@ body {
 }
 
 .l-card {
-  width: 300px;
-  height: -moz-fit-content;
-  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 4vh;
+  margin-top: -4vh;
 }
 
 .r-card {
@@ -72,7 +78,7 @@ input:focus, input:active {
 
 #billInput, #pplNum {
   width: 86vw;
-  height: 3vh;
+  height: 4vh;
 }
 
 .tip-btns {
