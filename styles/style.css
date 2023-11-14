@@ -130,8 +130,24 @@ label, .tip-select p {
   width: 20px;
   height: 20px;
   z-index: 9999;
-  transform: translate(12px, 25px);
+  transform: translate(12px, 24px);
   background-image: url(../images/icon-dollar.svg);
+  background-repeat: no-repeat;
+}
+
+#pplLabel {
+  position: relative;
+}
+#pplLabel::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  z-index: 9999;
+  transform: translate(12px, 32px);
+  background-image: url(../images/icon-person.svg);
   background-repeat: no-repeat;
 }
 

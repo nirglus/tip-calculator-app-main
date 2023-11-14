@@ -38,6 +38,21 @@ $mainFont: 'Space Mono', monospace;
         border: solid 2px $completedBtn;
     }
 }
+@mixin labelFormat($translateY, $url){
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 10px;
+        bottom: 0;
+        width: 20px;
+        height: 20px;
+        z-index: 9999;
+        transform: translate(12px, $translateY);
+        background-image: $url;
+        background-repeat: no-repeat;
+    }
+}
 
 body{
     @include widthHeight(100vw, 100vh);
@@ -116,19 +131,10 @@ label, .tip-select p{
     color: $customLabel;
 }
 #billLabel{
-    position: relative;
-    &::before{
-        content: "";
-        position: absolute;
-        top: 10px;
-        bottom: 0;
-        width: 20px;
-        height: 20px;
-        z-index: 9999;
-        transform: translate(12px, 24px);
-        background-image: url(../images/icon-dollar.svg);
-        background-repeat: no-repeat;
-    }
+    @include inputFormat(24px, url(../images/icon-dollar.svg));
+}
+#pplLabel{
+    @include inputFormat(32px, url(../images/icon-person.svg));
 }
 .ppl-num-headings{
     @include flex(row, baseline, unset);
