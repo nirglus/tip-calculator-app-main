@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () =>{
             errorPpl.innerHTML = "Can't be zero";
             pplNumInput.style.border = "solid 2px #f00";
         }else {
-            pplNumInput.style.border = "unset";
+            pplNumInput.style.border = "";
             calculate();
         }
     }
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () =>{
         pplNumInput.value = "";
         customTipInput.value = "";
         errorPpl.innerHTML = "";
-        pplNumInput.style.border = "unset";
+        pplNumInput.style.border = "";
     });
 });
 
