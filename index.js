@@ -35,7 +35,9 @@ document.addEventListener("DOMContentLoaded", () =>{
         lastChangedInput = event.target;
         if(pplNumInput.value == 0 && pplNumInput.value !== ""){
             errorPpl.innerHTML = "Can't be zero";
+            pplNumInput.style.border = "solid 2px #f00";
         }else {
+            pplNumInput.style.border = "unset";
             calculate();
         }
     }
@@ -50,6 +52,8 @@ document.addEventListener("DOMContentLoaded", () =>{
         billInput.value = "";
         pplNumInput.value = "";
         customTipInput.value = "";
+        errorPpl.innerHTML = "";
+        pplNumInput.style.border = "unset";
     });
 });
 

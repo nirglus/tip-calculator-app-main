@@ -197,4 +197,7 @@ label, .tip-select p {
   .output-display {
     font-size: 30px;
   }
+  .ppl-num-headings {
+    justify-content: space-between;
+  }
 }/*# sourceMappingURL=style.css.map */
