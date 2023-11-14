@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", () =>{
         const tipAmountPerPerson = calcTip(billValue, tipPercentage, pplNumValue);
         const totalAmountPerPerson = calcTotal(billValue, tipPercentage, pplNumValue);
     
-        displayTip.innerHTML = `${tipAmountPerPerson.toFixed(2)}`;
-        displayTotal.innerHTML = `${totalAmountPerPerson.toFixed(2)}`;
+        displayTip.innerHTML = `$${tipAmountPerPerson.toFixed(2)}`;
+        displayTotal.innerHTML = `$${totalAmountPerPerson.toFixed(2)}`;
     }
     
     function handleInputChange(event){

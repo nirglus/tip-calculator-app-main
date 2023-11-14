@@ -20,11 +20,12 @@ body {
 
 .calc-container {
   width: 90%;
-  height: 800px;
+  height: 750px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
+  gap: 4vh;
   padding: 0 5%;
   background-color: #fff;
   border-top-left-radius: 20px;
@@ -36,17 +37,20 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 4vh;
-  margin-top: -4vh;
+  gap: 3vh;
+  margin-top: -2vh;
 }
 
 .r-card {
-  width: 100%;
-  height: 100px;
+  width: 88vw;
+  height: 23vh;
   display: flex;
-  align-items: stretch;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
+  color: #fff;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 15px;
 }
 
 input {
@@ -129,5 +133,13 @@ label, .tip-select p {
   align-items: flex-end;
   justify-content: space-between;
   flex-direction: row;
-  width: 200px;
+  width: 75vw;
+}
+.output-sec small {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.output-display {
+  font-size: 26px;
+  color: hsl(172, 67%, 45%);
 }/*# sourceMappingURL=style.css.map */
