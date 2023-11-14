@@ -95,6 +95,17 @@ label, .tip-select p{
     font-size: 16px;
     color: $customLabel;
 }
+.ppl-num-headings{
+    @include flex(row, baseline, unset);
+    gap: 15px;
+}
+#errorPpl{
+    font-size: 14px;
+    color: #f00;
+}
+.hidden{
+    display: none;
+}
 .output-sec{
     @include flex(row, flex-end, space-between);
     width: 200px;

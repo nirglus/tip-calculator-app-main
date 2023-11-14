@@ -101,6 +101,23 @@ label, .tip-select p {
   color: hsl(186, 14%, 43%);
 }
 
+.ppl-num-headings {
+  display: flex;
+  align-items: baseline;
+  justify-content: unset;
+  flex-direction: row;
+  gap: 15px;
+}
+
+#errorPpl {
+  font-size: 14px;
+  color: #f00;
+}
+
+.hidden {
+  display: none;
+}
+
 .output-sec {
   display: flex;
   align-items: flex-end;
