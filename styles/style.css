@@ -20,7 +20,7 @@ body {
 
 .calc-container {
   width: 90%;
-  height: 750px;
+  height: 810px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,10 +43,10 @@ body {
 
 .r-card {
   width: 88vw;
-  height: 23vh;
+  height: 32vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
   color: #fff;
   background-color: hsl(183, 100%, 15%);
@@ -142,4 +142,16 @@ label, .tip-select p {
 .output-display {
   font-size: 26px;
   color: hsl(172, 67%, 45%);
+}
+
+#resetBtn {
+  width: 75vw;
+  height: 6vh;
+  border-radius: 8px;
+  border: 0;
+  text-transform: uppercase;
+  font-family: "Space Mono", monospace;
+  font-size: 23px;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
 }/*# sourceMappingURL=style.css.map */

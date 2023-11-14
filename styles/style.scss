@@ -53,7 +53,7 @@ body{
     font-size: 26px;
 }
 .calc-container{
-    @include widthHeight(90%, 750px);
+    @include widthHeight(90%, 810px);
     @include flex(column, center, center);
     gap: 4vh;
     padding: 0 5%;
@@ -67,8 +67,8 @@ body{
     margin-top: -2vh;
 }
 .r-card{
-    @include widthHeight(88vw, 23vh);
-    @include flex(column, center, center);
+    @include widthHeight(88vw, 32vh);
+    @include flex(column, center, space-evenly);
     color: #fff;
     background-color: $outputCard;
     border-radius: 15px;
@@ -127,5 +127,15 @@ label, .tip-select p{
 .output-display{
     font-size: 26px;
     color: $completedBtn;
+}
+#resetBtn{
+    @include widthHeight(75vw, 6vh);
+    border-radius: 8px;
+    border: 0;
+    text-transform: uppercase;
+    font-family: $mainFont;
+    font-size: 23px;
+    background-color: $completedBtn;
+    color: $outputCard;
 }
 
