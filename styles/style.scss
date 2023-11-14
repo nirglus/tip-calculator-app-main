@@ -131,10 +131,10 @@ label, .tip-select p{
     color: $customLabel;
 }
 #billLabel{
-    @include inputFormat(24px, url(../images/icon-dollar.svg));
+    @include labelFormat(24px, url(../images/icon-dollar.svg));
 }
 #pplLabel{
-    @include inputFormat(32px, url(../images/icon-person.svg));
+    @include labelFormat(32px, url(../images/icon-person.svg));
 }
 .ppl-num-headings{
     @include flex(row, baseline, unset);
@@ -164,9 +164,13 @@ label, .tip-select p{
     font-size: 23px;
     background-color: $completedBtn;
     color: $outputCard;
-    &:hover{
+    &:not(:disabled):hover{
         cursor: pointer;
         background-color: rgb(159 232 223);
+    }
+    &:disabled{
+        cursor: not-allowed;
+        opacity: 0.2;
     }
 }
 @media (min-width:768px){

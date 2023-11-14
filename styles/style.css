@@ -191,9 +191,13 @@ label, .tip-select p {
   background-color: hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%);
 }
-#resetBtn:hover {
+#resetBtn:not(:disabled):hover {
   cursor: pointer;
   background-color: rgb(159, 232, 223);
+}
+#resetBtn:disabled {
+  cursor: not-allowed;
+  opacity: 0.2;
 }
 
 @media (min-width: 768px) {
