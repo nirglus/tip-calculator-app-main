@@ -72,6 +72,9 @@ input:focus, input:active {
   outline: none;
   border: solid 2px hsl(172, 67%, 45%);
 }
+input:hover {
+  cursor: pointer;
+}
 
 .bill-sec {
   display: flex;
@@ -101,9 +104,13 @@ input:focus, input:active {
   font-family: "Space Mono", monospace;
   font-size: 24px;
 }
-.tip-btns button:hover {
+.tip-btns button:active, .tip-btns button:focus {
   background-color: hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%);
+}
+.tip-btns button:hover {
+  cursor: pointer;
+  background-color: rgb(159, 232, 223);
 }
 
 label, .tip-select p {
@@ -154,4 +161,8 @@ label, .tip-select p {
   font-size: 23px;
   background-color: hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%);
+}
+#resetBtn:hover {
+  cursor: pointer;
+  background-color: rgb(159, 232, 223);
 }/*# sourceMappingURL=style.css.map */
