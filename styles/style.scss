@@ -85,6 +85,7 @@ input{
 }
 #billInput, #pplNum{
     @include widthHeight(86vw, 4vh);
+    z-index: 1;
 }
 .tip-btns{
     display: grid;
@@ -113,6 +114,21 @@ input{
 label, .tip-select p{
     font-size: 16px;
     color: $customLabel;
+}
+#billLabel{
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 10px;
+        bottom: 0;
+        width: 20px;
+        height: 20px;
+        z-index: 9999;
+        transform: translate(12px, 24px);
+        background-image: url(../images/icon-dollar.svg);
+        background-repeat: no-repeat;
+    }
 }
 .ppl-num-headings{
     @include flex(row, baseline, unset);
