@@ -155,26 +155,29 @@ label, .tip-select p{
         justify-content: center;
     }
     .calc-container{
-        @include widthHeight(54vw, 52vh);
+        @include widthHeight(56vw, 51vh);
         border-radius: 20px;
         flex-direction: row;
         justify-content: space-between;
+        padding: 0 2%;
+        gap: 3vw;
     }
     #billInput, #pplNum{
-        width: 28vw;
+        width: 25vw;
     }
     .tip-btns{
         width: unset;
-        grid-template-rows: repeat(2, 6vh);
-        grid-template-columns: repeat(3, 9vw);
+        grid-template-rows: repeat(2, 5vh);
+        grid-template-columns: repeat(3, 8vw);
     }
     .r-card{
-        width: unset;
+        height: 45vh;
+        justify-content: space-around;
     }
     .output-sec{
-        width: unset;
+        width: 21vw;
     }
     #resetBtn{
-        width: unset;
+        width: 22vw;
     }
 }
