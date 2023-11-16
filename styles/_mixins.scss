@@ -1,0 +1,43 @@
+@mixin flex($direction, $align, $justify){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+@mixin widthHeight($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin inputFormat(){
+    border: 0;
+    border-radius: 5px;
+    background-color: $inputBg;
+    color: $inputColor;
+    font-size: $inputFont;
+    font-family: $mainFont;
+    text-align: right;
+    &::placeholder{
+        color: $placeHolder;
+    }
+    &:focus, &:active{
+        outline: none;
+        border: solid 2px $completedBtn;
+    }
+}
+@mixin labelFormat($translateY, $url){
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 10px;
+        bottom: 0;
+        width: 20px;
+        height: 20px;
+        z-index: 9999;
+        transform: translate(12px, $translateY);
+        background-image: $url;
+        background-repeat: no-repeat;
+    }
+}
