@@ -179,6 +179,7 @@ label, .tip-select p{
     }
     .calc-container{
         @include widthHeight(56vw, 51vh);
+        box-shadow: 0 30px 35px -14px #93c2c4;
         border-radius: 20px;
         flex-direction: row;
         justify-content: space-between;
