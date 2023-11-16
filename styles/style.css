@@ -200,7 +200,7 @@ label, .tip-select p {
   opacity: 0.2;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   body {
     justify-content: center;
   }
