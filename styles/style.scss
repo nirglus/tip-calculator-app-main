@@ -72,7 +72,7 @@ body{
     @include widthHeight(90%, 810px);
     @include flex(column, center, center);
     gap: 4vh;
-    padding: 0 5%;
+    padding: 3% 5%;
     background-color: #fff;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
