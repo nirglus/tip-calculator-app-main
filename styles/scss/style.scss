@@ -1,5 +1,5 @@
-@use "../styles/variables" as *;
-@use "../styles/mixins";
+@import "variables";
+@import "mixins";
 
 body{
     @include widthHeight(100vw, 100vh);
