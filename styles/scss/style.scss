@@ -78,10 +78,10 @@ label, .tip-select p{
     color: $customLabel;
 }
 #billLabel{
-    @include labelFormat(25px, url(../images/icon-dollar.svg));
+    @include labelFormat(25px, url(../../images/icon-dollar.svg));
 }
 #pplLabel{
-    @include labelFormat(35px, url(../images/icon-person.svg));
+    @include labelFormat(35px, url(../../images/icon-person.svg));
 }
 .ppl-num-headings{
     @include flex(row, baseline, unset);

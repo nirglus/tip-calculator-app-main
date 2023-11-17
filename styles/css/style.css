@@ -131,7 +131,7 @@ label, .tip-select p {
   height: 20px;
   z-index: 9999;
   transform: translate(12px, 25px);
-  background-image: url(../images/icon-dollar.svg);
+  background-image: url(../../images/icon-dollar.svg);
   background-repeat: no-repeat;
 }
 
@@ -147,7 +147,7 @@ label, .tip-select p {
   height: 20px;
   z-index: 9999;
   transform: translate(12px, 35px);
-  background-image: url(../images/icon-person.svg);
+  background-image: url(../../images/icon-person.svg);
   background-repeat: no-repeat;
 }
 
